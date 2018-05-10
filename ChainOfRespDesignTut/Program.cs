@@ -23,6 +23,8 @@ namespace ChainOfRespDesignTut
 
             newCent.giveOrders(orderCent);
 
+            Console.WriteLine("Testing Auto Build on TeamCity");
+
             Console.Read();
         }
     }
