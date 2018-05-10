@@ -18,19 +18,19 @@ namespace ChainOfRespDesignTut.Classes
 
         public override void giveOrders(ALegionary orderTaker)
         {
-            Console.WriteLine("Your Rank is: {0} of File: {1}", rank, file);
+            Console.WriteLine("Your Rank is: {0} of File: {1}\n", rank, file);
             if(checkIfRankIsHigher(orderTaker.rank) || checkIfRankIsEqual(orderTaker.rank))
             {
                 if(checkIfFileIsHigher(orderTaker.file))
                 {
-                    Console.WriteLine("Order were taken by Rank: {0} of File: {1}", orderTaker.rank, orderTaker.file);
+                    Console.WriteLine("Order were taken by Rank: {0} of File: {1}\n", orderTaker.rank, orderTaker.file);
                     return;
                 }
             }
 
 
             Console.WriteLine(
-                "Your order fell on silent ears.\nYou wander to people with lower ranks or files than the previous ones.");
+                "Your order fell on silent ears.\nYou wander to people with lower ranks or files than the previous ones.\n\n");
 
             if(checkIfRankIsEqual(orderTaker.rank))
             {
